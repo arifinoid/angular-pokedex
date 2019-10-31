@@ -1,0 +1,10 @@
+schema:
+  - https://graphql-pokemon.now.sh/
+documents:
+  - src/**/*.graphql
+generates:
+  ./src/app/services/pokedexGraphql.service.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-apollo-angular

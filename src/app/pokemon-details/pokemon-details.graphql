@@ -1,0 +1,30 @@
+query GetPokemonDetailsQuery($id: String!) {
+  pokemon(id: $id) {
+    id
+    number
+    name
+    image
+    weight {
+      maximum
+    }
+    height {
+      maximum
+    }
+    classification
+    types
+    resistant
+    attacks {
+      fast {
+        name
+        damage
+      }
+      special {
+        name
+        damage
+      }
+    }
+    fleeRate
+    maxCP
+    maxHP
+  }
+}
