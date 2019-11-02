@@ -1,4 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { map } from "rxjs/operators";
+
+import { GetPokemonsQueryGQL } from "../services/pokedexGraphql.service";
 
 @Component({
   selector: "app-pokemon-list",
@@ -7,7 +10,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PokemonListComponent implements OnInit {
-  constructor() {}
+  constructor(private pokemonListService: GetPokemonsQueryGQL) {}
+
+  pokemonList$ = this.pokemonListService
+    .fetch({ first: 10 })
+    .pipe(map(res => res.data.pokemons));
 
   ngOnInit() {}
 }

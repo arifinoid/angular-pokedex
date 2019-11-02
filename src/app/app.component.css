@@ -1,0 +1,11 @@
+div {
+  background-color: #943c4a;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 728px) {
+  div {
+    width: 100%;
+  }
+}
