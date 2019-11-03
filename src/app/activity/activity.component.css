@@ -1,0 +1,79 @@
+div {
+  font-size: 11px;
+  width: 300px;
+}
+
+div.activity .activity-header {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.activity .activity-header span:first-child {
+  font-size: 20px;
+  color: #f9d5bb;
+}
+
+div.activity .activity-header span:last-child {
+  font-size: 10px;
+  color: #f9d5bb;
+  cursor: pointer;
+  align-self: center;
+  cursor: pointer;
+}
+
+div.activity .activity-main img {
+  width: 70px;
+  height: auto;
+}
+
+div.activity .activity-main {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-top: 2px solid #f9d5bb;
+  border-bottom: 1px solid #f9d5bb;
+}
+
+div.activity .activity-comment {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.activity .activity-comment .details {
+  flex-direction: column;
+  width: 190px;
+  margin-left: 10px;
+}
+
+div.activity .activity-comment .details h3,
+div.activity .activity-comment .details p,
+div.activity .activity-comment .details span,
+div.activity .activity-comment .details fa-icon {
+  margin: 0;
+  color: #f9d5bb;
+}
+
+div.activity .activity-comment:hover {
+  border: 1px solid #f9d5bb;
+  background-image: url("../../assets/activity-corner.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  cursor: pointer;
+}
+
+div.activity .activity-comment a {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.activity .image {
+  margin-right: 5px;
+  height: 40px;
+  width: 60px;
+  background-color: #f4e3cf;
+}
+
+div.activity span i {
+  margin-right: 5px;
+}

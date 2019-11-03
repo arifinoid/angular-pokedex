@@ -1,0 +1,21 @@
+<ng-container *ngIf="pokemonList$ | async as pokemonList">
+  <div class="activity">
+    <div class="activity-header">
+      <span>Activity</span>
+      <span>View timeline / Filter activities</span>
+    </div>
+
+    <div class="activity-main">
+      <div class="activity-comment" *ngFor="let pokemon of pokemonList">
+        <img src="{{ pokemon.image }}" alt="{{ pokemon.name }}">
+        <div class="details">
+          <h3><b>{{ pokemon.name }}</b> commented</h3>
+          <p>
+            {{ pokemon.types }}
+          </p>
+          <fa-icon [icon]="faComment"></fa-icon><span> 2 seconds ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

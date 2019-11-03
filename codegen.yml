@@ -1,9 +1,9 @@
 schema:
-  - https://graphql-pokemon.now.sh/
+  - "https://graphql-pokemon.now.sh/"
 documents:
   - src/**/*.graphql
 generates:
-  ./src/app/services/pokedexGraphql.service.ts:
+  ./src/app/services/socialNetworkGraphql.service.ts:
     plugins:
       - typescript
       - typescript-operations

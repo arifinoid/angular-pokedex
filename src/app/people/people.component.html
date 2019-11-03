@@ -1,0 +1,28 @@
+<main>
+  <header>
+    <h2>People</h2>
+    <h6>View all</h6>
+  </header>
+
+  <div class="main">
+    <div class='main-image'>
+      <h1>main image</h1>
+    </div>
+
+    <div class='right-container'>
+      <div class='right-section' *ngFor="let item of arrayOne(2); let i = index;">
+        <h1>{{i}}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class='bottom-container'>
+    <div class='bottom-section' *ngFor="let item of arrayOne(3); let i = index;">
+      <h1>{{i}}</h1>
+      <span class='center'>
+        <fa-icon [icon]="faCrosshairs"></fa-icon>
+        <span>Show your work</span>
+      </span>
+    </div>
+  </div>
+</main>

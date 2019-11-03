@@ -1,0 +1,42 @@
+section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid #f1dccc;
+  justify-content: space-between;
+}
+
+header h2,
+header h6 {
+  color: #f1dccc;
+  margin: 0;
+}
+
+header h6 {
+  align-self: center;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+
+div.inner {
+  width: 140px;
+  background-color: #f1dccc;
+  height: 100px;
+  margin: 10px 10px 10px 0;
+}
+
+div.inner:not(:last-child) {
+  margin: 10px 10px 10px 0;
+}
+
+div.inner h1 {
+  display: none;
+}

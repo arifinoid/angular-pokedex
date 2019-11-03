@@ -1,0 +1,16 @@
+<section>
+  <header>
+    <h2>Channels</h2>
+    <h6>Browse all channels</h6>
+  </header>
+
+  <main>
+    <div class='channels-columns' *ngFor="let item of arrayOne(2); let i = index;">
+      <div class='channels-rows' *ngFor="let item of arrayTwo(5); let j = index;">
+        <div class='inner'>
+          <h1>{{i}}</h1>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

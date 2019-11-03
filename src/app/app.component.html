@@ -3,13 +3,28 @@
   <app-navbar style="width:100%;"></app-navbar>
   <app-breadcrumb></app-breadcrumb>
 
-  <div class='video'>
-    <section>
-      <app-mediaplayer [currentVideo]="currentVideo"></app-mediaplayer>
-      <app-playlist [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist>
-    </section>
-    <section class='bottom'>
-      <app-playlist-bottom [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist-bottom>
-    </section>
+  <main>
+    <div class="video">
+      <div class="header">
+        <span>
+          Videos
+        </span>
+        <span class='small'>
+          <a href="#">Browse all videos</a>
+        </span>
+      </div>
+      <section>
+        <app-mediaplayer [currentVideo]="currentVideo"></app-mediaplayer>
+        <app-playlist [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist>
+      </section>
+      <section class='bottom'>
+        <app-playlist-bottom [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist-bottom>
+      </section>
+    </div>
+    <app-activity></app-activity>
+  </main>
+
+  <div class="second-section">
+    <app-people></app-people>
+    <app-channels></app-channels>
   </div>
-</div>
