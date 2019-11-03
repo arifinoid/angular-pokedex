@@ -17,6 +17,7 @@ import { PlaylistBottomComponent } from "./playlist-bottom/playlist-bottom.compo
 import { ActivityComponent } from "./activity/activity.component";
 import { PeopleComponent } from "./people/people.component";
 import { ChannelsComponent } from "./channels/channels.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChannelsComponent } from "./channels/channels.component";
     PlaylistBottomComponent,
     ActivityComponent,
     PeopleComponent,
-    ChannelsComponent
+    ChannelsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

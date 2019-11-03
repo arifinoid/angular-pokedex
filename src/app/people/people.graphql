@@ -1,6 +1,0 @@
-query GetPokemonsQuery($first: Int!) {
-  pokemons(first: $first) {
-    name
-    image
-  }
-}

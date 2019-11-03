@@ -31,6 +31,8 @@ div.inner {
   background-color: #f1dccc;
   height: 100px;
   margin: 10px 10px 10px 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 div.inner:not(:last-child) {
@@ -39,4 +41,10 @@ div.inner:not(:last-child) {
 
 div.inner h1 {
   display: none;
+}
+
+div.inner p {
+  margin: 0 0 0 5px;
+  font-size: 12px;
+  color: #943c4a;
 }
