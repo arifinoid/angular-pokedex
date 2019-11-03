@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0 10px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    &:first-of-type {
+      margin-top: 10px;
+    }
+
+    img {
+      width: 150px;
+      height: 100px;
+      cursor: pointer;
+    }
+
+    h5 {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: #f1dccc;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  li > img.active {
+    border: 3px solid #ff1d5e;
+  }
+}

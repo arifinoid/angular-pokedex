@@ -1,4 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
   <app-navbar style="width:100%;"></app-navbar>
+  <app-breadcrumb></app-breadcrumb>
+
+  <div class='video'>
+    <section>
+      <app-mediaplayer [currentVideo]="currentVideo"></app-mediaplayer>
+      <app-playlist [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist>
+    </section>
+    <section class='bottom'>
+      <app-playlist-bottom [videos]="playlist" (videoClicked)="onVideoChange($event)"></app-playlist-bottom>
+    </section>
+  </div>
 </div>

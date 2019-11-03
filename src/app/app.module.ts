@@ -12,13 +12,21 @@ import { PokemonDetailsComponent } from "./pokemon-details/pokemon-details.compo
 import { GraphQLModule } from "./graphql.module";
 import { AppRoutingModule } from "./app-routing.modules";
 import { NavbarComponent } from "./navbar/navbar.component";
+import { BreadcrumbComponent } from "./breadcrumb/breadcrumb.component";
+import { MediaPlayerComponent } from "./mediaplayer/mediaplayer.component";
+import { PlaylistComponent } from "./playlist/playlist.component";
+import { PlaylistBottomComponent } from "./playlist-bottom/playlist-bottom.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
     PokemonDetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    BreadcrumbComponent,
+    MediaPlayerComponent,
+    PlaylistComponent,
+    PlaylistBottomComponent
   ],
   imports: [
     BrowserModule,

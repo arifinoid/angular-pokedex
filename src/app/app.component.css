@@ -2,6 +2,24 @@ div {
   background-color: #943c4a;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+}
+
+section.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+div.video {
+  width: 900px;
+  margin: 0 auto;
 }
 
 @media (max-width: 728px) {
