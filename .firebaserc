@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "social-network-pokedex": {
+      "hosting": {
+        "angular-pokedex": [
+          "social-network-pokedex"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "social-network-pokedex"
+  }
+}

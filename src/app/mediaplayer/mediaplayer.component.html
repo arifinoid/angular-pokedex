@@ -12,8 +12,7 @@
       (mousedown)="mouseDown = true"
       (mouseup)="mouseDown = false"
       (mouseout)="mouseDown = false"
-      (mousemove)="mouseDown && seek($event)"
-      (click)="seek($event)"
+      (mousemove)="mouseDown"
     >
       <div class="progress__filled" [ngStyle]="progressBarStyle"></div>
     </div>
