@@ -27,3 +27,9 @@ div.nav ul li a {
 div.nav ul li a:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 728px) {
+  div {
+    display: flex;
+  }
+}

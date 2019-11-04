@@ -117,8 +117,12 @@
           }
         },
         "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {}
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/angular-pokedex",
+            "netlifyToken": "",
+            "siteId": "7a846fa9-e892-4c0c-ab19-a71b2129987a"
+          }
         }
       }
     }
